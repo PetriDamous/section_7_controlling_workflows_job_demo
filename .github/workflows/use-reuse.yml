@@ -1,0 +1,11 @@
+name: Using Resuable Workflow
+on:
+  push:
+    branches:
+      - main
+jobs:
+  deploy:
+    uses: ././github/workflows/reusable.yml
+# uses key is a relative path to the workflow in current project
+
+# uses key can be a path to anohter workflow in another repo
